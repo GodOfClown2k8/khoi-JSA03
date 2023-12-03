@@ -1,64 +1,78 @@
-//câu 1
-let student = [
-  {
-    name: "NVA",
-    age: 16,
-    course: ["mindX 01", "mindX 02", "mindX 03"],
-  },
-  {
-    name: "NVB",
-    age: 18,
-    course: ["mindX 01", "mindX 02", "mindX 04"],
-  },
-  {
-    name: "NVC",
-    age: 17,
-    course: ["mindX 01", "mindX 03", "mindX 04"],
-  },
-  {
-    name: "NVD",
-    age: 15,
-    course: ["mindX 01", "mindX 02", "mindX 03"],
-  },
-];
-let ageQuestion = prompt("bro nhiu tuổi ?");
-for (var i = 0; i < student.length; i++) {
-  if (ageQuestion == student[i].age) {
-    Found = true;
-    console.log(`${student[i].name} có ${student[i].course}`);
-  }
-}
-if (Found){
-    console.log(" đấy thấy chưa");
-}
-let CInput = prompt("khóa học cần tìm ? ");
-let FoundCourse = false ;
+// //câu 1
+// let student = [{
+//     name: "NVA",
+//     age: 16,
+//     course: ["mindX 01", "mindX 02", "mindX 03"]
+// },
+// {
+//     name: "NVB",
+//     age: 18,
+//     course: ["mindX 01", "mindX 02", "mindX 04"]
+// },
+// {
+//     name: "NVC",
+//     age: 17,
+//     course: ["mindX 01", "mindX 03", "mindX 04"]
+// },
+// {
+//     name: "NVD",
+//     age: 15,
+//     course: ["mindX 01", "mindX 02", "mindX 03"]
+// }
+// ];
 
-for(var j=0;j<student.length;j++){
-    if (student[i].course.includes(CInput)) {
-        FoundCourse = true;
-        console.log(`${student[i].name} đang học khóa học ${CInput}`);
-    }
-}
-if(!FoundCourse){
-    console.log("đ tìm thấy");
-}
-//câu 2 
-let arr1 = [0,2,4,6,8]
-let arr2 = [1,3,5,7]
-console.log("Các số lớn hơn 3 trong arr1:");
-arr1.forEach(function (num) {
-    if (num > 3) {
-        console.log(num);
-    }
-});
-console.log("Các số lớn hơn 3 trong arr2:");
-arr2.forEach(function (num) {
-    if (num > 3) {
-        console.log(num);
-    }
-});
-let mergedArr1 = arr1.concat(arr2);
-console.log("Mảng sau khi ghép arr1 và arr2:", mergedArr1);
-let mergedArr2 = arr1.concat(arr2).sort((a, b) => a - b);
-console.log("Mảng sau khi ghép arr1 và arr2 và sắp xếp:", mergedArr2);
+// let nhaptuoi = prompt("Độ tuổi cần tìm: ");
+// let nhaplop = prompt("Nhập lớp cần tìm");
+
+// let timtuoi = false;
+// let timlop = false;
+
+// for (let person of student) {
+// if (person.age == parseInt(nhaptuoi)) {
+//     console.log(person.name)
+//     timtuoi = true;
+// }
+
+// if (person.course.includes(nhaplop)) {
+//     console.log(person.name)
+//     timlop = true;
+// }
+// }
+//câu 3
+// const link = "https://jsonplaceholder.typicode.com/photos"
+
+// async function fetchImage() {
+//     try {
+//         const response = await fetch(link);
+//         let data = await response.json();
+
+//         let newData = data.slice(0, 5)
+
+//         newData.forEach(item => {
+//             let image = document.createElement('img')
+//             image.src = item.thumbnailUrl
+//             document.body.appendChild(image)
+//         })
+//     } catch (error) {
+//         console.log(error)
+//     }
+
+// }
+
+// fetchImage()
+// const arr =[4,5,6]
+const arr1 =[1,2,3]
+// let max = Math.max(...arr)
+// const arrClone = [...arr,7]
+// const concat = [...arr ,0 , ...arr1]
+// console.log(concat);
+// const arr2 = arr1.map((item) => {
+//     return item * 2 ;
+// })
+// console.log(arr2);
+// // console.log(arr1);
+// const arr2 = arr1.filter((item) => {
+//     return item % 2 === 0;
+// })
+// console.log(arr2);
+// console.log(arr1 );
