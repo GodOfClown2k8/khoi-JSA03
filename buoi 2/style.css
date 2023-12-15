@@ -69,14 +69,43 @@ button{
 input{
     width: 80%;
 }
-@media only screen and (max-width : 400px){
+ /* Câu 2a 
+@media only screen and (max-width: 600px) {
     .inp{
-        width: 60%;
-        }
-    #wrapper{
-        width: 80%;
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
     }
-    h4{
-        font-size: 12px;
+    .sign-up-button {
+      display: none;
     }
-}
+    .sign-in-button {
+      display: block;
+    }
+  }
+  
+  /* Câu 2b
+  @media only screen and (min-width: 768px) {
+    .sign-up-button {
+      display: block;
+    }
+  }
+  
+  /* Câu 2c 
+  @media only screen and (min-width: 700px) {
+    .inp:hover,.sign-in-button:hover {
+      background-color: lightgray;
+      transition: background-color 0.3s;
+    }
+  }
+  
+  /* Câu 2d 
+  
+  
+  @media only screen and (min-width: 768px) {
+    .mmb {
+      display: flex;
+      flex-direction: row;
+    }
+  } */
+   
