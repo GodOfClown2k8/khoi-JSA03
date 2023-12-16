@@ -63,49 +63,90 @@ button{
     cursor: pointer;
     font-size: 14px;
     font-weight: 500;
-
-   
 }
 input{
     width: 80%;
 }
- /* Câu 2a 
-@media only screen and (max-width: 600px) {
+.inp2{
+  width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    background-color: #fff;
+    margin-top: 10px;
+}
+.sign-in-button{
+  background-color: green;
+  visibility: hidden;
+}
+.sign-up-button,.sign-in-button{
+  position: absolute;
+}
+ /* Câu 2a  */
+/* @media only screen and (max-width: 600px) {
     .inp{
       display: block;
       width: 100%;
       margin-bottom: 10px;
     }
-    .sign-up-button {
-      display: none;
-    }
     .sign-in-button {
       display: block;
     }
-  }
-  
-  /* Câu 2b
-  @media only screen and (min-width: 768px) {
+  }  */
+  /* Câu 2b */
+  /* @media only screen and (min-width: 768px) {
     .sign-up-button {
       display: block;
     }
+    .sign-in-button{
+      display: none;
+    } 
   }
+  @media only screen and (max-width:567px) {
+    .sign-up-button{
+      visibility: hidden;
+    }
+  } */
   
-  /* Câu 2c 
-  @media only screen and (min-width: 700px) {
-    .inp:hover,.sign-in-button:hover {
+  /* Câu 2c */
+  /* @media only screen and (max-width: 767px) {
+    .sign-in-button:hover {
+      display: block;
+    }
+  }
+  @media only screen and (min-width:800px) {
+    .sign-in-button {
+      display: none;
+    }
+  } */
+  
+  /* Câu 2d */
+  
+  
+  /* @media only screen and (min-width: 700px) {
+    .inp:hover ,.inp2:hover {
       background-color: lightgray;
       transition: background-color 0.3s;
     }
-  }
-  
-  /* Câu 2d 
-  
-  
-  @media only screen and (min-width: 768px) {
-    .mmb {
-      display: flex;
-      flex-direction: row;
-    }
   } */
-   
+   /* Câu 2e */
+   @media only screen and (max-width: 968px) {
+    .mmb {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .inp {
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+   }
