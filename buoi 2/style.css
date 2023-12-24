@@ -41,7 +41,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 10px;
-    padding: 10px;
+    padding: 20px;
     border-radius: 5px;
     border: 1px solid #ccc;
     box-sizing: border-box;
@@ -49,10 +49,10 @@ body{
     font-weight: 500;
     color: #333;
     background-color: #fff;
-
+    
 }
 button{
-
+    height: 40px;
     width: 150px;
     justify-content: center;
     background-color: blue;
@@ -66,24 +66,9 @@ button{
 }
 input{
     width: 80%;
+    height: 30px;
 }
-.inp2{
-  width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    font-size: 14px;
-    font-weight: 500;
-    color: #333;
-    background-color: #fff;
-    margin-top: 10px;
-}
+
 .sign-in-button{
   background-color: green;
   visibility: hidden;
