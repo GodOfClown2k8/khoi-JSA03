@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+    Câu 1 : D 
+    câu 2 : C 
+    câu 3 : B 
+    câu 4 : A
+    Câu 5 : A 
+    câu 6 : A
+    câu 7 : D
+    câu 8 : C 
+-->
+  </body>
+  <script>
+    //Cau 9
+    let m = [1, 2, 3, 4, 5, 6, "hh", "9", 80, 100];
+    m = m.filter((item) => typeof item === "number");
+    let mSquared = m.map((item) => Math.pow(item, 2));
+    console.log(mSquared);
+    // câu 10
+    let string = "High knowledge,high return";
+    let array = string.split("").filter((word) => word !== "");
+    array = array.map((word) => word.toLowerCase());
+    console.log(array);
+    //câu 11
+    class Employee {
+      constructor(name, salary) {
+        this.name = name;
+        this.salary = salary;
+      }
+
+      DisplayInfo() {
+        console.log(`Name: ${this.name}, Salary: $${this.salary}`);
+      }
+    }
+    class Manager extends Employee {
+      constructor(name, salary, department) {
+        super(name, salary);
+        this.department = department;
+      }
+    
+    DisplayInfo(){
+        super.DisplayInfo();
+        console.log(`Department: ${this.department}`);
+      }
+    }
+    const emp1 = new Employee("Fck", 5000);
+    const manager1 = new Manager("Lê Văn Hào", 10000, "IT");
+    emp1.DisplayInfo();
+    manager1.DisplayInfo();
+  </script>
+</html>
