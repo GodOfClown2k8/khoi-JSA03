@@ -20,21 +20,12 @@ const firebaseConfig = {
       .then((userCredential)=>{
           const user = userCredential.user;
           showUserInfo(user);
+          alert('đăng ký thành công'+ user.email);
+          window.location.href = 'login.html';
           })
           .catch((error)=>{
               console.error('Error signing up:',error.message);
               });
   
   }    
-  function signIn(){
-      var email=document.getElementById("email").value;
-      var password=document.getElementById("password").value;
-      auth.signInWithEmailAndPassword(email,password)
-      .then((userCredential)=>{
-         const user = userCredential.user;
-          showUserInfo(user);
-          })
-          .catch((error)=> {
-              alert(error.code + ' Error signing up: '+ error.message);
-              });
-  } 
+  
